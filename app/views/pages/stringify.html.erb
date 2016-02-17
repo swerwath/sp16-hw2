@@ -1,0 +1,9 @@
+<% n = params["name"] %>
+<% a = params["adjective"] %>
+<% if n.blank? and a.blank? %>
+  <% @text = 'You are nothing!' %>
+<% else %>
+  <% @text = "#{ n } is so #{ a }" %>
+<% end %>
+
+<p><%= @text %></p>
